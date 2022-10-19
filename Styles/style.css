@@ -67,3 +67,21 @@ a,a:hover {
     text-decoration: none;
     color: #000;
 }
+
+
+/* styling the main content */
+main {
+    grid-row: 2/4;
+    border: 2px solid orange;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+}
+
+#section-1 {
+    background-color: pink;
+}
+
+#section-2 {
+    background-color: olive;
+}
+
