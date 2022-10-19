@@ -1,3 +1,8 @@
+:root {
+    --theme-color: rgb(26, 26, 26);
+    --background-color: rgb(245, 246, 247);
+}
+
 *,
 *:is(::after, ::before) {
     margin: 0;
@@ -9,18 +14,19 @@ body {
     height: 100vh;
     width: 100vw;
     display: grid;
-    grid-template-rows: .8fr 6fr 2fr;
+    grid-template-rows: .4fr 6fr 2fr;
     grid-template-columns: 1fr;
+    background: var(--background-color);
 }
 
 header {
     grid-column: 1/2;
-    border: 1px dashed black;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 2%;
+    background-color: var(--background-color);
 }
-
 header i {
     font-size: 30px;
     padding: 0;
@@ -54,9 +60,10 @@ header .menu .menu-list {
 
 .menu .menu-list li:hover {
     scale: 1.2;
+    color: #000;
 }
 
-.menu-list li a {
+a,a:hover {
     text-decoration: none;
     color: #000;
 }
